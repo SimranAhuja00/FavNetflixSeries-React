@@ -2,33 +2,35 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Card from './Cards';
+import Sdata from './Sdata'
 
 ReactDOM.render( 
   <>
   <h1 className='heading_style'>My favourite Netflix series:-</h1>
-  <Card imgsrc="https://wallpapercave.com/w/wp4786354.jpg"
-  title = "A Netflix Original Series"
-  sname = "Black Mirror"
-  link = "https://www.netflix.com/in/title/70264888" />
+  <Card
+  imgsrc={Sdata[0].imgscr}
+  title ={Sdata[0].title}
+  sname ={Sdata[0].sname}
+  link = {Sdata[0].links}/>
 
-  <Card imgsrc="https://wallpapercave.com/w/wp11827124.jpg"
-  title = "A Netflix Original Series"
-  sname = "Stranger Things"
-  link = "https://www.netflix.com/in/title/80057281"/>
+  <Card imgsrc={Sdata[1].imgscr}
+  title ={Sdata[1].title}
+  sname ={Sdata[1].sname}
+  link = {Sdata[1].links}/>
 
-  <Card imgsrc="https://wallpapercave.com/w/wp3920138.jpg"
-  title = "A Netflix Original Series"
-  sname = "Atypical"
-  link = "https://www.netflix.com/in/title/80117540"/>
+  <Card imgsrc={Sdata[2].imgscr}
+  title ={Sdata[2].title}
+  sname = {Sdata[2].sname}
+  link = {Sdata[2].links}/>
 
-  <Card imgsrc="https://wallpapercave.com/w/wp5149318.jpg"
-  title = "A Netflix Original Series"
-  sname = "Friends"
-  link = "https://www.netflix.com/in/title/70153404"/>
+  <Card imgsrc={Sdata[3].imgscr}
+  title ={Sdata[3].title}
+  sname = {Sdata[3].sname}
+  link = {Sdata[3].links}/>
 
-  <Card imgsrc="https://wallpapercave.com/w/wp5941640.jpg"
-  title = "A Netflix Original Series"
-  sname = "The Office"
-  link = "https://www.netflix.com/in/title/70136120"/>
+  <Card imgsrc={Sdata[4].imgscr}
+  title = {Sdata[4].title}
+  sname = {Sdata[4].sname}
+  link = {Sdata[4].links}/>
   </>
   ,document.getElementById('root'));
